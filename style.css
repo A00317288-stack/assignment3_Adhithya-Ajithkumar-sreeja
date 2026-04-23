@@ -1,0 +1,129 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #b6b4b4;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* NAVIGATION (MOBILE FIRST) */
+nav {
+  background-color: #6b3e26;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 12px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+/* HOVER + FOCUS */
+nav a:hover,
+nav a:focus {
+  background-color: #8b5a3c;
+  color: #ffd700;
+}
+
+/* HEADER */
+header {
+  padding: 30px;
+  background-color: #6b3e26;
+}
+
+/* HEADINGS */
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 20px 0 10px;
+}
+
+/* TEXT */
+p {
+  font-size: 18px;
+  margin-bottom: 15px;
+  padding: 0 10px;
+  line-height: 1.5;
+}
+
+/* LISTS */
+ul {
+  list-style-position: inside;
+  margin-bottom: 20px;
+}
+
+li {
+  margin: 8px 0;
+}
+
+/* IMAGES */
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  border: 3px solid #6b3e26;
+  border-radius: 8px;
+  display: block;
+}
+
+/* MAIN CONTENT */
+main {
+  padding: 20px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #6b3e26;
+  border-top: 3px solid #e6d6c6;
+  padding: 20px;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+/* ========================= */
+/* TABLET (768px and up) */
+/* ========================= */
+@media (min-width: 768px) {
+  nav {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  nav a {
+    width: auto;
+  }
+
+  img {
+    width: 60%;
+  }
+}
+
+/* ========================= */
+/* DESKTOP (1024px and up) */
+/* ========================= */
+@media (min-width: 1024px) {
+  nav {
+    justify-content: space-between;
+    padding: 0 40px;
+  }
+
+  img {
+    width: 40%;
+  }
+}
